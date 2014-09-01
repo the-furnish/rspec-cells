@@ -2,7 +2,6 @@
 
 source "http://rubygems.org"
 
-gem "railties"
 gem "appraisal"
 gem "rspec-rails", ">= 3.0.0"
 
