@@ -3,6 +3,7 @@
 source "http://rubygems.org"
 
 gem "appraisal"
+gem "byebug"
 gem "rspec-rails", ">= 3.0.0"
 
 gemspec :path => "../"
