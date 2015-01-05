@@ -66,7 +66,7 @@ module RSpec::Rails
 
     def method_missing(method, *args, &block)
       # Send the route helpers to the application router.
-      if @routes && @routes.named_routes.helpers.include?(method)
+      if @routes && @routes.named_routes.route_defined?(method)
         @controller.send(method, *args, &block)
       else
         super
